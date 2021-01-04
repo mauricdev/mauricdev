@@ -1,37 +1,37 @@
 ```php
 <?php
 
-namespace AshBaker;
+namespace Mauricdev;
 
 class About extends Me
 {
-    public function getCurrentWorkplace(): array
+    public function getEstudios(): array
     {
         return [
-            'workplace' => [
-                'company' => 'Qquicker',
-                'position' => 'Product Owner'         
+            'Institución' => [
+                'Instituto' => 'Duoc Uc',
+                'Titulo' => 'Ingeniero en informática'         
             ]
         ];
     }
 
-    public function getDailyKnowledge(): array
+    public function getConocimiento(): array
     {
         return [
             Php::class,
             Javascript::class,
+            Ajax::class,
             Laravel::class,
-            Vuejs::class,
-            Angular::class,
-            ReactNative::class,
-            TailwindCss::class,
-            Aws::class,
+            Codeigniter::class,
+            Webservice::class,
+            Aspx:: class,
+            Java::class,     
         ];
     }
 
-    public function getFutureGoal(): string
+    public function getFaseMotivadora(): string
     {
-        return 'To contribute to open source.';
+        return 'Si se puede imaginar se puede programar.';
     }
 }
 ```
