@@ -1,37 +1,35 @@
-```php
 <?php
 
 namespace Mauricdev;
 
-class About extends Me
+class About extends BackendEngineer
 {
-    public function getEstudios(): array
+    public function getEducation(): array
     {
         return [
-            'Institución' => [
-                'Instituto' => 'Duoc Uc',
-                'Titulo' => 'Ingeniero en informática'         
-            ]
+            'Degree' => 'Ingeniería en Informática',
+            'Institution' => 'Duoc UC',
+            'Status' => 'Titulado'
         ];
     }
 
-    public function getConocimiento(): array
+    public function getTechStack(): array
     {
         return [
-            Php::class,
-            Javascript::class,
-            Ajax::class,
-            Laravel::class,
-            Codeigniter::class,
-            Webservice::class,
-            Aspx:: class,
-            Java::class,     
+            'Languages' => ['Java (8-21)', 'TypeScript', 'SQL', 'PL/SQL'],
+            'Backend' => ['Spring Boot', 'Microservices', 'API REST'],
+            'Cloud & DevOps' => ['GCP', 'Kubernetes', 'Docker', 'Jenkins', 'CI/CD'],
+            'Tools' => ['SonarQube', 'Jira', 'Postman']
         ];
     }
 
-    public function getFaseMotivadora(): string
+    public function getCurrentFocus(): string
     {
-        return 'Si se puede imaginar se puede programar.';
+        return 'Arquitecturas escalables, procesamiento masivo de datos y despliegue en la nube.';
+    }
+
+    public function getMotto(): string
+    {
+        return 'Si se puede imaginar, se puede programar y escalar.';
     }
 }
-```
