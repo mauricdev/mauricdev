@@ -1,3 +1,4 @@
+```php
 <?php
 
 namespace Mauricdev;
@@ -33,3 +34,4 @@ class About extends BackendEngineer
         return 'Si se puede imaginar, se puede programar y escalar.';
     }
 }
+```
